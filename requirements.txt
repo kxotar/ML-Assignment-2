@@ -1,9 +1,9 @@
-import scikit-learn
-import pandas
-import numpy
-import joblib
-import matplotlib
-import seaborn
+scikit-learn
+pandas
+numpy
+joblib
+matplotlib
+seaborn
 
 requirements = f"""streamlit
 scikit-learn=={sklearn.__version__}
