@@ -1,0 +1,23 @@
+import scikit-learn
+import pandas
+import numpy
+import joblib
+import matplotlib
+import seaborn
+
+requirements = f"""streamlit
+scikit-learn=={sklearn.__version__}
+pandas=={pandas.__version__}
+numpy=={numpy.__version__}
+joblib=={joblib.__version__}
+matplotlib=={matplotlib.__version__}
+seaborn=={seaborn.__version__}
+"""
+
+with open("requirements.txt", "w") as file:
+    file.write(requirements)
+
+print(requirements)
+
+from google.colab import files
+files.download("requirements.txt")

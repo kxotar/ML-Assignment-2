@@ -1,0 +1,34 @@
+{
+    "feature_names": [
+        "Area",
+        "Perimeter",
+        "MajorAxisLength",
+        "MinorAxisLength",
+        "AspectRatio",
+        "Eccentricity",
+        "ConvexArea",
+        "EquivDiameter",
+        "Extent",
+        "Solidity",
+        "Roundness",
+        "Compactness",
+        "ShapeFactor1",
+        "ShapeFactor2",
+        "ShapeFactor3",
+        "ShapeFactor4"
+    ],
+    "target_column": "Class",
+    "class_names": [
+        "BARBUNYA",
+        "BOMBAY",
+        "CALI",
+        "DERMASON",
+        "HOROZ",
+        "SEKER",
+        "SIRA"
+    ],
+    "auc_method": "One-vs-rest macro average",
+    "precision_recall_f1_method": "Weighted average",
+    "random_state": 42,
+    "test_size": 0.2
+}
