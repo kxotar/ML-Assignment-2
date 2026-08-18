@@ -25,8 +25,8 @@ from sklearn.metrics import (
 # ---------------------------------------------------------
 
 st.set_page_config(
-    page_title="Dry Bean Classification Lab",
-    page_icon="🫘",
+    page_title="Machine Learning Assignment-2 : Dry Bean Classification",
+    page_icon="",
     layout="wide",
 )
 
@@ -272,7 +272,7 @@ def create_confusion_matrix(actual_values, predictions):
 # ---------------------------------------------------------
 
 st.markdown(
-    '<div class="main-title">🫘 Dry Bean Classification Lab</div>',
+    '<div class="main-title">Machine Learning Assignment-2 : Dry Bean Classification Lab</div>',
     unsafe_allow_html=True,
 )
 
@@ -526,7 +526,7 @@ st.bar_chart(chart_data)
 # Selected model metrics
 # ---------------------------------------------------------
 
-st.subheader(f"4. Detailed results — {selected_model_name}")
+st.subheader(f"4. Detailed results of : {selected_model_name}")
 
 selected_results = evaluation_cache[selected_model_name]
 selected_metrics = selected_results["metrics"]
@@ -602,12 +602,12 @@ with tab2:
 with st.expander("Evaluation methodology"):
     st.markdown(
         """
-        - **Accuracy:** proportion of correctly classified test records.
-        - **AUC:** macro-average one-vs-rest multiclass AUC.
-        - **Precision:** weighted-average precision.
-        - **Recall:** weighted-average recall.
-        - **F1:** weighted-average F1 score.
-        - **MCC:** multiclass Matthews Correlation Coefficient.
-        - The overall winner is identified using weighted F1 score.
+        - **Accuracy:** proportion of correctly Classified Test Records.
+        - **AUC:** Macro-Average One-vs-Rest Multiclass AUC.
+        - **Precision:** Weighted Average Precision.
+        - **Recall:** Weighted Average Recall.
+        - **F1:** Weighted Average F1-Score.
+        - **MCC:** Multiclass Matthews Correlation Coefficient.
+        - The overall winner is identified using Weighted F1-Score.
         """
     )
